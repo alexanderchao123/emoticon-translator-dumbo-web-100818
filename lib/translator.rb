@@ -12,6 +12,8 @@ def load_library(file_path)
   return results
 end
 
+p load_library("lib/emoticons.yml")
+
 def get_japanese_emoticon(file_path, emoticon)
   emoticons = load_library(file_path)
   if emoticons["get_emoticon"].has_key?(emoticon)
