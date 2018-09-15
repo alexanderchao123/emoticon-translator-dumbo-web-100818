@@ -23,6 +23,7 @@ end
 
 def get_english_meaning(file_path, emoticon)
   emoticons = load_library(file_path)
+  binding.pry
   if emoticons["get_meaning"].has_key?(emoticon)
     return emoticons["get_meaning"][emoticon]
   else
